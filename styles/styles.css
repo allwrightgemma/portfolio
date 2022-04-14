@@ -34,6 +34,38 @@ p {
   line-height: 30px;
 }
 
+nav {
+  padding: 20px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 48px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #4f486e;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+  color: #5d887c;
+}
+
+.logo {
+  max-height: 50px;
+}
+
 .hero {
   background: var(--background-color);
   text-align: center;
@@ -138,5 +170,9 @@ p {
   .content {
     text-align: center;
     padding: 0;
+  }
+
+  nav a {
+    font-size: 13px;
   }
 }
