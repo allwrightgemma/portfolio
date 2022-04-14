@@ -74,6 +74,33 @@ p {
   padding: 120px 60px;
 }
 
+.about-header {
+  padding: 120px 20px;
+}
+
+.about-header h1 {
+  font-size: 64px;
+  line-height: 1.25;
+}
+
+.about-header h2 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+}
+
+.about-header img {
+  border-radius: 4px;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.about-header-content {
+  margin-right: 50px;
+}
+
 @media (max-width: 960px) {
   h1 {
     font-size: 50px;
@@ -95,5 +122,10 @@ p {
   .project-description {
     padding: 0;
     text-align: center;
+  }
+
+  .about-header {
+    text-align: center;
+    padding: 0;
   }
 }
