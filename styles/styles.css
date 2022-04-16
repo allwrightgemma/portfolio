@@ -29,6 +29,10 @@ h2 {
   font-family: var(--heading-font-family);
 }
 
+h4 {
+  font-size: 48px;
+}
+
 p {
   font-size: 16px;
   line-height: 30px;
@@ -66,6 +70,21 @@ footer {
   margin: 60px 0;
 }
 
+footer .contact-cta {
+  background: var(--background-color);
+  padding: 40px 120px 30px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+
+footer .contact-cta p {
+  margin: 0;
+}
+
+footer .contact-cta {
+  align-items: center;
+}
+
 footer .email-link {
   text-decoration: none;
   color: black;
@@ -82,7 +101,7 @@ footer .social-links a {
   margin: 0 20px;
   color: var(--primary-color);
   background: var(--background-color);
-  padding: 10px 15px;
+  padding: 11px 15px;
   font-size: 18px;
   border-radius: 50%;
   transition: all 150ms ease-in-out;
@@ -183,6 +202,10 @@ footer .social-links a:hover {
 
   h2 {
     font-size: 44px;
+  }
+
+  h4 {
+    font-size: 18px;
   }
 
   .hero {
