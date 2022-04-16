@@ -212,6 +212,7 @@ footer p a:hover {
   background: var(--background-color);
   padding: 50px;
   margin: 20px;
+  border-radius: 4px;
 }
 
 @media (max-width: 960px) {
@@ -226,6 +227,10 @@ footer p a:hover {
 
   h4 {
     font-size: 18px;
+  }
+
+  nav a {
+    font-size: 13px;
   }
 
   .hero h2 {
@@ -248,7 +253,7 @@ footer p a:hover {
     line-height: 1.5;
   }
 
-  nav a {
-    font-size: 13px;
+  .project-image {
+    padding: 20px;
   }
 }
