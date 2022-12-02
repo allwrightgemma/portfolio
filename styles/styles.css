@@ -20,7 +20,7 @@ h6 {
   font-weight: bold;
 }
 h1 {
-  font-size: 80px;
+  font-size: 70px;
   line-height: 1.5;
 }
 
@@ -194,7 +194,7 @@ footer p a:hover {
 }
 
 .content h1 {
-  font-size: 64px;
+  font-size: 50px;
   line-height: 1.25;
 }
 
@@ -255,7 +255,7 @@ footer p a:hover {
   }
 
   nav a {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .hero h2 {
@@ -274,7 +274,7 @@ footer p a:hover {
   }
 
   .content h1 {
-    font-size: 50px;
+    font-size: 40px;
     line-height: 1.5;
   }
 
