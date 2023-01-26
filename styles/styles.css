@@ -65,6 +65,10 @@ nav a:hover {
 	color: #5d887c;
 }
 
+img {
+	border-radius: 4px;
+}
+
 footer {
 	margin: 60px 0;
 }
@@ -244,10 +248,7 @@ footer p a:hover {
 	border-radius: 4px;
 }
 
-.project-image img {
-}
-
-@media (max-width: 960px) {
+@media (max-width: 996px) {
 	h1 {
 		font-size: 40px;
 		line-height: 1.25;
@@ -263,6 +264,10 @@ footer p a:hover {
 
 	nav a {
 		font-size: 16px;
+	}
+
+	.row > * {
+		padding: 0;
 	}
 
 	.hero h2 {
