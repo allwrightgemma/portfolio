@@ -2,7 +2,7 @@
 font-family: 'Raleway', sans-serif; */
 :root {
 	--primary-color: #5d887c;
-	--background-color: #ecdecf;
+	--background-color: #f8f2f7;
 	--heading-font-family: 'Playfair Display', serif;
 	--default-font-family: 'Raleway', sans-serif;
 }
@@ -243,6 +243,7 @@ footer p a:hover {
 
 .project-image {
 	background: var(--background-color);
+
 	padding: 20px;
 	margin: 0 20px;
 	border-radius: 4px;
@@ -267,7 +268,7 @@ footer p a:hover {
 	}
 
 	.row > * {
-		padding: 0;
+		padding: 0 8px 0 8px;
 	}
 
 	.hero h2 {
