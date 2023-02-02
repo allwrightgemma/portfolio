@@ -73,7 +73,7 @@
 						<p class="text-center">Built with HTML, CSS and React</p>
 					</div>
 
-					<div class="col-md-6 mb-4 project" onclick="openPopup()">
+					<div class="col-md-6 mb-4 project">
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -88,7 +88,11 @@
 									ex impedit doloremque corporis iste dolorem delectus? Corporis
 									necessitatibus ab ratione maxime dolor perferendis!
 								</p>
-								<a href="">See website</a>
+								<a
+									href="https://hilarious-parfait-306aed.netlify.app/"
+									target="_blank"
+									>See website</a
+								>
 							</div>
 						</div>
 						<h3 class="text-center mt-5">React Weather project</h3>
@@ -179,11 +183,19 @@
 			</footer>
 		</div>
 		<script>
+			const projectElement = document.querySelector('.project');
+
 			let popup = document.querySelector('.popup');
 
-			function openPopup() {
-				popup.classList.add('open-popup');
+			function togglePopup() {
+				if (!popup.classList.contains('open-popup')) {
+					popup.classList.add('open-popup');
+				} else {
+					popup.classList.remove('open-popup');
+				}
 			}
+
+			projectElement.addEventListener('click', togglePopup);
 		</script>
 	</body>
 </html>
