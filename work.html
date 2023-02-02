@@ -56,18 +56,32 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="content-container container">
+		<div class="content-container" onclick="closePopup()">
 			<div class="content">
 				<h1 class="mb-5">Here's what I've been working on</h1>
 
 				<div class="row">
-					<div class="col-md-6 mb-4">
+					<div class="col-md-6 mb-4 project">
 						<div class="project-image">
 							<img
 								class="img-fluid"
 								src="/images/dictionary-app-1.png"
 								alt="Dictionary app"
 							/>
+						</div>
+						<div class="popup">
+							<h3>Dictionary project</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+								officia incidunt ratione rerum dicta quaerat nesciunt, ex
+								impedit doloremque corporis iste dolorem delectus? Corporis
+								necessitatibus ab ratione maxime dolor perferendis!
+							</p>
+							<a
+								href="https://shimmering-daffodil-7a5302.netlify.app/"
+								target="_blank"
+								>See website</a
+							>
 						</div>
 						<h3 class="text-center mt-5">Dictionary project</h3>
 						<p class="text-center">Built with HTML, CSS and React</p>
@@ -101,7 +115,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 mb-4">
+					<div class="col-md-6 mb-4 project">
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -109,17 +123,45 @@
 								alt="Website project"
 							/>
 						</div>
+						<div class="popup">
+							<h3>Website project</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+								officia incidunt ratione rerum dicta quaerat nesciunt, ex
+								impedit doloremque corporis iste dolorem delectus? Corporis
+								necessitatibus ab ratione maxime dolor perferendis!
+							</p>
+							<a
+								href="https://shimmering-dragon-52a481.netlify.app/"
+								target="_blank"
+								>See website</a
+							>
+						</div>
 						<h3 class="text-center mt-5">Website project</h3>
 						<p class="text-center">Built with HTML and CSS</p>
 					</div>
 
-					<div class="col-md-6 mb-4">
+					<div class="col-md-6 mb-4 project">
 						<div class="project-image">
 							<img
 								class="img-fluid"
 								src="/images/weather-app-1.png"
 								alt="Screenshot of weather app"
 							/>
+						</div>
+						<div class="popup">
+							<h3>Vanilla Javascript Weather project</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+								officia incidunt ratione rerum dicta quaerat nesciunt, ex
+								impedit doloremque corporis iste dolorem delectus? Corporis
+								necessitatibus ab ratione maxime dolor perferendis!
+							</p>
+							<a
+								href="https://shimmering-dragon-52a481.netlify.app/"
+								target="_blank"
+								>See website</a
+							>
 						</div>
 						<h3 class="text-center mt-5">Weather project</h3>
 						<p class="text-center">Built with HTML, CSS and Javascript</p>
@@ -183,19 +225,29 @@
 			</footer>
 		</div>
 		<script>
-			const projectElement = document.querySelector('.project');
+			const projectElement = document.querySelectorAll('.project');
+			let popups = document.querySelectorAll('.popup');
 
-			let popup = document.querySelector('.popup');
-
-			function togglePopup() {
-				if (!popup.classList.contains('open-popup')) {
-					popup.classList.add('open-popup');
-				} else {
-					popup.classList.remove('open-popup');
+			function togglePopup(e) {
+				let popup = this.querySelector('.popup');
+				e.stopPropagation();
+				if (!popup.classList.contains('.open-popup')) {
+					popup.classList.toggle('open-popup');
 				}
 			}
 
-			projectElement.addEventListener('click', togglePopup);
+			function closePopup() {
+				popups.forEach((popup) => {
+					console.log(popup);
+					if (!popup.classList.contains('.open-popup')) {
+						popup.classList.remove('open-popup');
+					}
+				});
+			}
+
+			projectElement.forEach((project) =>
+				project.addEventListener('click', togglePopup)
+			);
 		</script>
 	</body>
 </html>
