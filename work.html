@@ -61,7 +61,7 @@
 				<h1 class="mb-5">Here's what I've been working on</h1>
 
 				<div class="row">
-					<div class="col-md-6 mb-4 project">
+					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -93,7 +93,7 @@
 						<p class="text-center">Built with HTML, CSS and React</p>
 					</div>
 
-					<div class="col-md-6 mb-4 project">
+					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -130,7 +130,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 mb-4 project">
+					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -160,7 +160,7 @@
 						<p class="text-center">Built with HTML and CSS</p>
 					</div>
 
-					<div class="col-md-6 mb-4 project">
+					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -270,10 +270,15 @@
 
 			function closePopup() {
 				popups.forEach((popup) => {
-					console.log(popup);
 					if (!popup.classList.contains('.open-popup')) {
 						popup.classList.remove('open-popup');
 					}
+				});
+			}
+			function closeOpenPopups(e) {
+				let openpopups = document.querySelectorAll('.popup.open-popup');
+				openpopups.forEach((openPopup) => {
+					openPopup.classList.remove('open-popup');
 				});
 			}
 
