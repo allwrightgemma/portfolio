@@ -330,4 +330,13 @@ footer p a:hover {
 	.project-image {
 		padding: 20px;
 	}
+
+	.popup {
+		width: 85%;
+		position: absolute;
+	}
+
+	.popup p {
+		font-size: 12px;
+	}
 }
