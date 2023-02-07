@@ -333,10 +333,11 @@ footer p a:hover {
 
 	.popup {
 		width: 85%;
-		position: absolute;
 	}
 
 	.popup p {
 		font-size: 12px;
+		line-height: 1.25;
+		text-align: justify;
 	}
 }
