@@ -56,12 +56,193 @@
 				</ul>
 			</nav>
 		</div>
-		<div class="content-container" onclick="closePopup()">
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="dictionaryModal"
+			tabindex="-1"
+			aria-labelledby="dictionaryModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title fs-5" id="dictionaryModalLabel">
+							React Dictionary project
+						</h3>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						This project was built with React and my goal was to create a simple
+						dictionary app with multiple features such as definitions,
+						phonetics, examples, and images. This project called for multiple
+						components and to use React States and Loops which further developed
+						my skills in React. As I wanted to include an images feature I added
+						a second API to generate the images related to the searched word. In
+						order to improve user experience I integrated an audio player to
+						make use of the APIs speech example of each word that had been
+						opening up in a new tab.
+					</div>
+					<div class="modal-footer">
+						<a
+							href="https://shimmering-daffodil-7a5302.netlify.app/"
+							target="_blank"
+							>See website</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="reactWeatherModal"
+			tabindex="-1"
+			aria-labelledby="reactWeatherModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title fs-5" id="reactWeatherModalLabel">
+							React Weather project
+						</h3>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						This project was a recreation of a Vanilla JavaScript project using
+						React. The app provides a worldwide weather forecaster allowing
+						users to search for any city in the world and see the current
+						real-time weather and a 5-day forecast. By using React I was able to
+						make the code more streamlined by using components and states. One
+						of the most challenging aspects of this project was that the
+						forecast feature required data to be sent from the parent component
+						when the city was changed, which required the use of {Use Effect} to
+						run the code after the component has loaded. In order to avoid
+						repetitive code I learned to use the map() function to take care of
+						rendering the daily forecast. I used the npm registry to include
+						animated weather icons which bring the app to life.
+					</div>
+					<div class="modal-footer">
+						<a
+							href="https://hilarious-parfait-306aed.netlify.app/"
+							target="_blank"
+							>See website</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="websiteModal"
+			tabindex="-1"
+			aria-labelledby="websiteModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title fs-5" id="websiteModalLabel">
+							Website project
+						</h3>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						This project was a recreation of a template landing page using
+						BootStrap. I made some adjustments to the original template font
+						colour and font size to improve readability and user experience.
+						This recreation involved using a grid design and focusing on the
+						responsive layout, adjusting the images and text depending on the
+						size of the screen. It also included a navbar that changed on
+						scroll, which required some JavaScript, and converted to a hamburger
+						menu on a small screen.
+					</div>
+					<div class="modal-footer">
+						<a
+							href="https://shimmering-dragon-52a481.netlify.app/"
+							target="_blank"
+							>See website</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="vanillaWeatherModal"
+			tabindex="-1"
+			aria-labelledby="vanillaWeatherModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h3 class="modal-title fs-5" id="vanillaWeatherModalLabel">
+							Vanilla Javascript Weather project
+						</h3>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						Using Vanilla Javascript I built this Weather app attaining skills
+						using Bootstrap, APIs, Git Version control, and hosting. I also
+						refined my HTML, CSS and Javascript knowledge. The app provides a
+						worldwide weather forecaster allowing users to search for any city
+						in the world and see the current real-time weather and a 5-day
+						forecast. This was my first project integrating an API and I chose
+						the OpenWeatherMap API for its functionality, which allowed me to
+						provide extra information such as weather description, wind speed,
+						and humidity. I also added a current weather feature using the
+						geolocation tools supported in the browser to display the weather
+						for where the user is. Developing the 5-day forecast was the most
+						challenging part of this project as it required a different API call
+						using coordinates and then concatenating the response in the
+						innerhtml for each of the day's forecast. I chose to display the
+						temperature only in celsius as I thought this provided a more
+						streamlined design and was applicable for most of the world.
+					</div>
+					<div class="modal-footer">
+						<a
+							href="https://loving-visvesvaraya-c3edb2.netlify.app//"
+							target="_blank"
+							>See website</a
+						>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-container">
 			<div class="content">
 				<h1 class="mb-5">Here's what I've been working on</h1>
 
 				<div class="row">
-					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
+					<div
+						class="col-md-6 mb-4"
+						data-bs-toggle="modal"
+						data-bs-target="#dictionaryModal"
+					>
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -70,60 +251,21 @@
 							/>
 						</div>
 
-						<div class="popup">
-							<h3>React Dictionary project</h3>
-							<p>
-								This project was built with React and my goal was to create a
-								simple dictionary app with multiple features such as
-								definitions, phonetics, examples, and images. This project
-								called for multiple components and to use React States and Loops
-								which further developed my skills in React. As I wanted to
-								include an images feature I added a second API to generate the
-								images related to the searched word. In order to improve user
-								experience I integrated an audio player to make use of the APIs
-								speech example of each word that had been opening up in a new
-								tab.
-							</p>
-							<a
-								href="https://shimmering-daffodil-7a5302.netlify.app/"
-								target="_blank"
-								>See website</a
-							>
-						</div>
 						<h3 class="text-center mt-5">React Dictionary project</h3>
 						<p class="text-center">Built with HTML, CSS and React</p>
 					</div>
 
-					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
+					<div
+						class="col-md-6 mb-4"
+						data-bs-toggle="modal"
+						data-bs-target="#reactWeatherModal"
+					>
 						<div class="project-image">
 							<img
 								class="img-fluid"
 								src="/images/react-weather-app-1.png"
 								alt="React weather app"
 							/>
-							<div class="popup">
-								<h3>React Weather project</h3>
-								<p>
-									This project was a recreation of a Vanilla JavaScript project
-									using React. The app provides a worldwide weather forecaster
-									allowing users to search for any city in the world and see the
-									current real-time weather and a 5-day forecast. By using React
-									I was able to make the code more streamlined by using
-									components and states. One of the most challenging aspects of
-									this project was that the forecast feature required data to be
-									sent from the parent component when the city was changed,
-									which required the use of {Use Effect} to run the code after
-									the component has loaded. In order to avoid repetitive code I
-									learned to use the map() function to take care of rendering
-									the daily forecast. I used the npm registry to include
-									animated weather icons which bring the app to life.
-								</p>
-								<a
-									href="https://hilarious-parfait-306aed.netlify.app/"
-									target="_blank"
-									>See website</a
-								>
-							</div>
 						</div>
 						<h3 class="text-center mt-5">React Weather project</h3>
 						<p class="text-center">Built with HTML, CSS and React</p>
@@ -131,7 +273,11 @@
 				</div>
 
 				<div class="row">
-					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
+					<div
+						class="col-md-6 mb-4"
+						data-bs-toggle="modal"
+						data-bs-target="#websiteModal"
+					>
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -139,29 +285,16 @@
 								alt="Website project"
 							/>
 						</div>
-						<div class="popup">
-							<h3>Website project</h3>
-							<p>
-								This project was a recreation of a template landing page using
-								BootStrap. I made some adjustments to the original template font
-								colour and font size to improve readability and user experience.
-								This recreation involved using a grid design and focusing on the
-								responsive layout, adjusting the images and text depending on
-								the size of the screen. It also included a navbar that changed
-								on scroll, which required some JavaScript, and converted to a
-								hamburger menu on a small screen.
-							</p>
-							<a
-								href="https://shimmering-dragon-52a481.netlify.app/"
-								target="_blank"
-								>See website</a
-							>
-						</div>
+
 						<h3 class="text-center mt-5">Website project</h3>
 						<p class="text-center">Built with HTML and CSS</p>
 					</div>
 
-					<div class="col-md-6 mb-4 project" onclick="closeOpenPopups()">
+					<div
+						class="col-md-6 mb-4"
+						data-bs-toggle="modal"
+						data-bs-target="#vanillaWeatherModal"
+					>
 						<div class="project-image">
 							<img
 								class="img-fluid"
@@ -169,33 +302,7 @@
 								alt="Screenshot of weather app"
 							/>
 						</div>
-						<div class="popup">
-							<h3>Vanilla Javascript Weather project</h3>
-							<p>
-								Using Vanilla Javascript I built this Weather app attaining
-								skills using Bootstrap, APIs, Git Version control, and hosting.
-								I also refined my HTML, CSS and Javascript knowledge. The app
-								provides a worldwide weather forecaster allowing users to search
-								for any city in the world and see the current real-time weather
-								and a 5-day forecast. This was my first project integrating an
-								API and I chose the OpenWeatherMap API for its functionality,
-								which allowed me to provide extra information such as weather
-								description, wind speed, and humidity. I also added a current
-								weather feature using the geolocation tools supported in the
-								browser to display the weather for where the user is. Developing
-								the 5-day forecast was the most challenging part of this project
-								as it required a different API call using coordinates and then
-								concatenating the response in the innerhtml for each of the
-								day's forecast. I chose to display the temperature only in
-								celsius as I thought this provided a more streamlined design and
-								was applicable for most of the world.
-							</p>
-							<a
-								href="https://shimmering-dragon-52a481.netlify.app/"
-								target="_blank"
-								>See website</a
-							>
-						</div>
+
 						<h3 class="text-center mt-5">Vanilla Javascript Weather project</h3>
 						<p class="text-center">Built with HTML, CSS and Javascript</p>
 					</div>
@@ -257,35 +364,5 @@
 				</p>
 			</footer>
 		</div>
-		<script>
-			const projectElement = document.querySelectorAll('.project');
-			let popups = document.querySelectorAll('.popup');
-
-			function togglePopup(e) {
-				let popup = this.querySelector('.popup');
-				e.stopPropagation();
-				if (!popup.classList.contains('.open-popup')) {
-					popup.classList.toggle('open-popup');
-				}
-			}
-
-			function closePopup() {
-				popups.forEach((popup) => {
-					if (!popup.classList.contains('.open-popup')) {
-						popup.classList.remove('open-popup');
-					}
-				});
-			}
-			function closeOpenPopups(e) {
-				let openpopups = document.querySelectorAll('.popup.open-popup');
-				openpopups.forEach((openPopup) => {
-					openPopup.classList.remove('open-popup');
-				});
-			}
-
-			projectElement.forEach((project) =>
-				project.addEventListener('click', togglePopup)
-			);
-		</script>
 	</body>
 </html>
